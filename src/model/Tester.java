@@ -8,6 +8,8 @@ import service.ReservationService;
 
 public class Tester {
     public static void main(String[] args) {
+        MainMenu mainMenu = new MainMenu();
+
         Room room1 = new Room("100",150.5, RoomType.SINGLE);
         ReservationService.listOfRoom.add(room1);
         Room room2 = new Room("101",140.5, RoomType.SINGLE);
@@ -29,19 +31,5 @@ public class Tester {
         CustomerService.customerCollection.add(customer2);
         Customer customer3 = new Customer("Julia", "Strelets", "julia@email.ru");
         CustomerService.customerCollection.add(customer3);
-
-        MainMenu mainMenu = new MainMenu();
-        Room freeRoom = new Room("1", RoomType.SINGLE);
-        System.out.println(freeRoom.getRoomPrice());
-
-        Customer customer = new Customer("Nick", "Ivanof", "email@mail.ru");
-        System.out.println(customer);
-
-        CustomerService customerService = new CustomerService();
-        customerService.addCustomer("Bob", "Petrov", "pochta@gmail.com");
-        customerService.addCustomer("Jhon", "Smith", "smith@gmail.com");
-        System.out.println(customerService);
-
-
     }
 }
