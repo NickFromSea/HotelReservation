@@ -1,5 +1,16 @@
 package model;
-
+/**
+ * Программа для резервирования номеров в гостинице
+ * позволяет:
+ * - создание комнат
+ * - создание аккаунта гостя
+ * - поиск и резервирование комнаты
+ * - просмотр своей резервации
+ * - просмотр всех аккаунтов
+ * - просмотр всех резерваций
+ *
+ * @author Nikolai Streletc (n.streletc@gmail.com) *
+ */
 
 
 import display.MainMenu;
@@ -10,7 +21,7 @@ public class Tester {
     public static void main(String[] args) {
         MainMenu mainMenu = new MainMenu();
 
-        Room room1 = new Room("100",150.5, RoomType.SINGLE);
+        /*Room room1 = new Room("100",150.5, RoomType.SINGLE);
         ReservationService.listOfRoom.add(room1);
         Room room2 = new Room("101",140.5, RoomType.SINGLE);
         ReservationService.listOfRoom.add(room2);
@@ -25,11 +36,11 @@ public class Tester {
         Room room7 = new FreeRoom("202",RoomType.DOUBLE);
         ReservationService.listOfRoom.add(room7);
 
-        Customer customer1 = new Customer("Nick", "Streletc", "mail@email.ru");
+        Customer customer1 = new Customer("Tom", "Smith", "mailtom@email.com");
         CustomerService.customerCollection.add(customer1);
-        Customer customer2 = new Customer("Bob", "Petrov", "petrov@email.ru");
+        Customer customer2 = new Customer("Bob", "Maersk", "mailbob@email.ca");
         CustomerService.customerCollection.add(customer2);
-        Customer customer3 = new Customer("Julia", "Strelets", "julia@email.ru");
-        CustomerService.customerCollection.add(customer3);
+        Customer customer3 = new Customer("Natali", "Ivanova", "mailnatali@email.ru");
+        CustomerService.customerCollection.add(customer3);*/
     }
 }
